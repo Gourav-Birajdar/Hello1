@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "8f7add69-216c-4542-b67e-30c34129967a",
+		"name": "Avisys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task 1",
+			"item": [
+				{
+					"name": "Get All Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080//api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get customer with all 3 parameters",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/customer?firstName=Kathy&lastName=Sierra&mobileNumber=9111111114",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "firstName",
+											"value": "Kathy"
+										},
+										{
+											"key": "lastName",
+											"value": "Sierra"
+										},
+										{
+											"key": "mobileNumber",
+											"value": "9111111114"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 13:47:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"firstName\": \"Kathy\",\n        \"lastName\": \"Sierra\",\n        \"mobileNumber\": \"9111111114\"\n    }\n]"
+						},
+						{
+							"name": "Get customer based on firstname",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/customer?firstName=Kat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "firstName",
+											"value": "Kat"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 13:48:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"firstName\": \"Kathy\",\n        \"lastName\": \"Sierra\",\n        \"mobileNumber\": \"9111111114\"\n    }\n]"
+						},
+						{
+							"name": "Get customers based on lastname",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/customer?lastName=th",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "lastName",
+											"value": "th"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 13:49:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Alan\",\n        \"lastName\": \"Smith\",\n        \"mobileNumber\": \"9111111111\"\n    },\n    {\n        \"id\": 3,\n        \"firstName\": \"John\",\n        \"lastName\": \"Smith\",\n        \"mobileNumber\": \"9111111113\"\n    }\n]"
+						},
+						{
+							"name": "Get All Customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/customer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 13:49:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Alan\",\n        \"lastName\": \"Smith\",\n        \"mobileNumber\": \"9111111111\"\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"Joe\",\n        \"lastName\": \"Turing\",\n        \"mobileNumber\": \"9111111112\"\n    },\n    {\n        \"id\": 3,\n        \"firstName\": \"John\",\n        \"lastName\": \"Smith\",\n        \"mobileNumber\": \"9111111113\"\n    },\n    {\n        \"id\": 4,\n        \"firstName\": \"Kathy\",\n        \"lastName\": \"Sierra\",\n        \"mobileNumber\": \"9111111114\"\n    }\n]"
+						},
+						{
+							"name": "Getcustomer by mobile number",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/customer?mobileNumber=9111111111",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "mobileNumber",
+											"value": "9111111111"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 13:50:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"firstName\": \"Alan\",\n    \"lastName\": \"Smith\",\n    \"mobileNumber\": \"9111111111\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
